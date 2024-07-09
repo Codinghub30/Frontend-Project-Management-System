@@ -17,7 +17,7 @@ const Project = () => {
     useEffect(() => {
         const fetchProjects = async () => {
             try {
-                const response = await fetch(`${process.env.backend_url}/api/project/getProjects`);
+                const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/project/getProjects`);
                 if (!response.ok) {
                     throw new Error('Failed to fetch projects');
                 }
@@ -44,7 +44,7 @@ const Project = () => {
                 status: 'pending',
             };
 
-            const response = await fetch(`${process.env.backend_url}/api/project/CreateProjects`, {
+            const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/project/CreateProjects`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -77,7 +77,7 @@ const Project = () => {
 
     const handleDeleteProject = async (projectId) => {
         try {
-            const response = await fetch(`${process.env.backend_url}/api/project/DeleteProject/${projectId}`, {
+            const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/project/DeleteProject/${projectId}`, {
                 method: 'DELETE',
             });
     
@@ -94,7 +94,7 @@ const Project = () => {
 
    const handleStatusChange = async (projectId, status) => {
     try {
-        const response = await fetch(`${process.env.backend_url}/api/project/projects/${projectId}/status`, {
+        const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/project/projects/${projectId}/status`, {
             method: 'PATCH',
             headers: {
                 'Content-Type': 'application/json',

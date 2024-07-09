@@ -12,7 +12,7 @@ const Task = () => {
     useEffect(() => {
         const fetchProjects = async () => {
             try {
-                const response = await fetch(`${process.env.backend_url}/api/project/getProjects`);
+                const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/project/getProjects`);
                 if (!response.ok) {
                     throw new Error('Failed to fetch projects');
                 }

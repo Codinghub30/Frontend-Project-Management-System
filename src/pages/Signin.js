@@ -23,8 +23,8 @@ const Signin = () => {
             if (email === '' || password === '' || !email || !password) {
                 return alert("All fields are important");
             }
-            console.log(process.env.backend_url);
-            const res = await fetch(`${process.env.backend_url}/api/auth/signin`, {
+            console.log(process.env.REACT_APP_BACKEND_URL);
+            const res = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/auth/signin`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
