@@ -22,7 +22,7 @@ const Signup = () => {
         const { username, email, password } = formData;
         e.preventDefault();
         try {
-            const res = await fetch('http://localhost:9004/api/auth/signup', {
+            const res = await fetch(`${process.env.backend_url}/api/auth/signup`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

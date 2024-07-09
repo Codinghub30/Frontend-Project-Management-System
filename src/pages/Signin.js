@@ -23,7 +23,8 @@ const Signin = () => {
             if (email === '' || password === '' || !email || !password) {
                 return alert("All fields are important");
             }
-            const res = await fetch('http://localhost:9004/api/auth/signin', {
+            console.log(process.env.backend_url);
+            const res = await fetch(`${process.env.backend_url}/api/auth/signin`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
