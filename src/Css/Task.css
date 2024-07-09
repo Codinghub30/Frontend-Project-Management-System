@@ -1,0 +1,47 @@
+.container-tasks {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.content {
+  display: flex;
+}
+
+.tasks-section {
+  flex: 1;
+}
+
+.tasks-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.task-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.task-card.overdue {
+  border: 2px solid red;
+}
+
+.task-header {
+  border-bottom: 2px solid #e0e0e0;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.task-header h3 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.task-card p {
+  margin: 5px 0;
+  font-size: 16px;
+}

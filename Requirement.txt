@@ -1,0 +1,53 @@
+To develop a project management tool that fulfills the requirements outlined in TASK 5, here are the key functionalities you would typically implement:
+
+User Authentication and Authorization:
+
+Implement user login/signup functionality to authenticate users.
+Use authorization mechanisms to ensure users can only access their own projects and tasks.
+Project Management:
+
+Create Projects: Allow users to create new projects.
+List Projects: Display a list of projects that a user is involved in.
+Update Projects: Enable users to update project details such as name, description, and status.
+Delete Projects: Provide functionality to delete projects (with confirmation prompts).
+Task Management:
+
+Create Tasks: Within each project, users should be able to create tasks.
+List Tasks: Display tasks associated with each project.
+Update Tasks: Allow users to update task details including name, description, assignees, deadline, and status (e.g., to-do, in progress, completed).
+Delete Tasks: Provide functionality to delete tasks (with confirmation prompts).
+Task Assignments:
+
+Assign Tasks: Allow users to assign tasks to specific team members or assignees.
+Track Assignees: Display assigned users for each task.
+Deadline Management:
+
+Set Deadlines: Provide a way to set deadlines for tasks and projects.
+Display Deadlines: Clearly display deadlines for each task and project.
+Progress Tracking:
+
+Task Status: Track the status of each task (e.g., not started, in progress, completed).
+Project Status: Optionally track overall project progress or milestones.
+Search and Filter:
+
+Allow users to search for specific projects or tasks.
+Provide filtering options (e.g., by status, deadline) to quickly find relevant information.
+Notifications:
+
+Implement notifications for task assignments, deadline approaching, or task updates.
+Provide a way for users to manage notification preferences.
+Reporting:
+
+Generate reports on project/task status, deadlines, and progress.
+Optionally, include graphical representations (charts, graphs) for better visualization.
+User Interface (UI) Considerations:
+
+Design a user-friendly interface with intuitive navigation.
+Ensure responsiveness for various devices (desktop, tablets, mobile).
+
+
+
+
+
+complettion and pending and on Going (status)
+section for compeltion and pending and ongoing in single page.
